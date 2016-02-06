@@ -1,0 +1,6 @@
+@mixin addTransition($prop, $speed, $delay) {
+    -webkit-transition: $prop $speed ease-out $delay;
+    -moz-transition: $prop $speed ease-out $delay;
+    -o-transition: $prop $speed ease-out $delay;
+    transition: $prop $speed ease-out $delay;
+}

@@ -1,0 +1,49 @@
+.form-wrapper {
+	background-color: $formWrapperBackground;
+	width: $formWrapperWidth;
+	margin: $formWrapperMargin;
+	padding: $formWrapperPadding;
+}
+	#webinar-reg-form {
+		text-align: $formTextAlign;
+	}
+		.form-input {
+			width: $formInputWidth;
+			font-size: $formInputFontSize;
+			padding: $formInpuptPadding;
+			margin: $formInputMargin;
+			&:focus {
+				outline-color: $formInputFocusColor;
+			}
+		}
+		.form-label {
+			font-size: $formLabelFontSize;
+			&.label-required {
+				&:after {
+					content: $labelRequiredAfterContent;
+					display: $labelRequiredAfterDisplay;
+					color: $labelRequiredAfterColor;
+				}
+			}
+			&.label-toggle {
+				display: $formLabelToggleDisplay;
+			}
+		}
+		.form-label,
+		.reg-toggle-wrapper {
+			display: $formLabelDisplay;
+			margin-bottom: $formLabelMarginBottom;
+		}
+	.optional-fields {
+		&.hidden {
+			opacity: $hiddenOpacity;
+			visibility: $hiddenVisibility;
+			@include addTransition($optionalFieldTransitionProp, $optionalFieldTransitionSpeed, $optionalFieldTransitionDelay);
+		}
+		&.visible {
+			opacity: $visibleOpacity;
+			visibility: $visibleVisibility;
+			@include addTransition($optionalFieldTransitionProp, $optionalFieldTransitionSpeed, $optionalFieldTransitionDelay);
+		}
+	}
+

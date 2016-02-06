@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Webinar Registration Form</title>
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="form-wrapper">
+		<h1>Регистрация за уебинар</h1>
+
+        <form id="webinar-reg-form" action="#" method="POST">
+            <!-- REQUIRED FIELDS -->
+            <div class="required-fields">
+                <!-- NAME -->
+                <label class="form-label label-required" for="register-name">Име и Фамилия:</label>
+                <input id="register-name" class="form-input required-input" name="regName" type="text" placeholder="Име и Фамилия" required="required">
+                <!-- ADDRESS -->
+                <label class="form-label" for="reg-address">Адрес:</label>
+                <input id="reg-address" class="form-input" name="regAddress" type="text" placeholder="Адрес">
+                <!-- LOCATION -->
+                <label class="form-label" for="reg-location">Населено място:</label>
+                <input id="reg-location" class="form-input" name="regLocation" type="text" placeholder="Населено място">
+                <!-- ZIP -->
+                <label class="form-label" for="reg-zip">Пощенски код:</label>
+                <input id="reg-zip" class="form-input" name="regZip" type="text" placeholder="Пощенски код">
+                <!-- EMAIL -->
+                <label class="form-label label-required" for="reg-email">Email:</label>
+                <input id="reg-email" class="form-input required-input" name="regEmail" type="email" placeholder="Email">
+                <!-- PHONE -->
+                <label class="form-label label-required" for="reg-phone">Телефон:</label>
+                <input id="reg-phone" class="form-input required-input" name="regTel" type="tel" required="required" placeholder="Телефон">
+                <!-- DATE -->
+                <label class="form-label label-required" for="reg-date">Дата на семинара:</label>
+                <input id="reg-date" class="form-input required-input" name="regDate" type="date" required="required">
+                
+                <!-- TOGGLE OPTIONAL -->
+                <div class="reg-toggle-wrapper">
+                    <input id="js-reg-optional-toggle" name="reOptionalToggledOff" type="checkbox">
+                    <label class="form-label label-toggle" for="js-reg-optional-toggle">Желая фактура</label>
+                </div>
+            </div>
+            <!-- OPTIONAL FIELDS -->
+            <div class="optional-fields hidden">
+                <!-- ORGANIZATION -->
+                <label class="form-label label-required" for="reg-oprganization">Фирма/Организация:</label>
+                <input id="reg-oprganization" class="form-input required-input-toggle" name="regOrganization" type="text" placeholder="Фирма/Организация">
+                <!-- MOL -->
+                <label class="form-label label-required" for="reg-mol">МОЛ:</label>
+                <input id="reg-mol" class="form-input required-input-toggle" name="regMOL" type="text" placeholder="МОЛ">
+                <!-- EIK -->
+                <label class="form-label label-required" for="reg-eik">ЕИК:</label>
+                <input id="reg-eik" class="form-input required-input-toggle" name="regEIK" type="text" placeholder="ЕИК">
+                <!-- ИН -->
+                <label class="form-label label-required" for="reg-in">ИН:</label>
+                <input id="reg-in" class="form-input required-input-toggle" name="regIN" type="text" placeholder="ИН по ДДС">
+                <!-- Адрес -->
+                <label class="form-label label-required" for="reg-organization-address">Адрес:</label>
+                <input id="reg-organization-address" class="form-input required-input-toggle" name="regOrganizationAddress" type="text" placeholder="Адрес">
+            </div>
+
+            <!-- SUBMIT/RESET -->
+            <input class="button button-submit" type="submit" value="Регистрирай се">
+            <input id="js-reset-button" class="button button-reset" type="reset" value="Изчисти">
+        </form>
+    </div>
+
+    <!-- VALIDATION -->
+    <script src="scripts/validations/form-validation.js"></script>
+</body>
+
+</html>

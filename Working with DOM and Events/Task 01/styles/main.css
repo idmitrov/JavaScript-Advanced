@@ -1,0 +1,66 @@
+html, body, div,
+form, input, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font: 10px 'Arial', 'Calibri', sans-serif;
+  color: #000; }
+
+body {
+  text-align: center; }
+
+label {
+  cursor: pointer; }
+
+.form-wrapper {
+  background-color: #FFF7F0;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1% 10%; }
+
+#webinar-reg-form {
+  text-align: left; }
+
+.form-input {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0.3rem;
+  margin: 0.5rem 0; }
+  .form-input:focus {
+    outline-color: #09F; }
+
+.form-label {
+  font-size: 1.2rem; }
+  .form-label.label-required:after {
+    content: "*";
+    display: inline-block;
+    color: #F00; }
+  .form-label.label-toggle {
+    display: inline-block; }
+
+.form-label,
+.reg-toggle-wrapper {
+  display: block;
+  margin-bottom: 0.5rem; }
+
+.optional-fields.hidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -o-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s; }
+.optional-fields.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -o-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s; }
+
+.button {
+  padding: 0.2rem 0.5rem; }
+
+/*# sourceMappingURL=main.css.map */

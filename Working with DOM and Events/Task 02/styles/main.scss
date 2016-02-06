@@ -1,0 +1,31 @@
+@import 'reset/_reset';
+
+#validator-wrapper {
+	margin: 0 auto;
+	width: 50%;
+	padding: 2%;
+}
+	.validation-input,
+	.validation-output {
+		font-size: 1.4rem;
+		height: 2rem;
+		width: 100%;
+		padding: 0.2rem;
+	}
+
+	.validation-input {
+		border: solid 0.1rem #CCC;
+	}
+	.validation-output {
+		background-color: transparent;
+		&.correct {
+			background-color: #0F0; 
+		}
+		&.incorrect {
+			background-color: #F00; 
+		}
+	}
+	.validate-button {
+		font-size: 1.2rem;
+		padding: 0.5rem 1rem;
+	}

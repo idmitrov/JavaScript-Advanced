@@ -1,0 +1,45 @@
+// FORM WRAPPER
+$formWrapperBackground: #FFF7F0;
+$formWrapperWidth: 90%;
+$formWrapperMargin: 0 auto;
+$formWrapperPadding: 1% 10%;
+
+// FORM
+$formTextAlign: left;
+
+// FORM INPUT
+$formInputWidth: 100%;
+$formInputFontSize: 1.4rem;
+$formInpuptPadding: 0.3rem;
+$formInputMargin: 0.5rem 0;
+$formInputFocusColor: #09F;
+
+// FORM LABEL
+$formLabelFontSize: 1.2rem;
+$formLabelDisplay: block; // REG TOGGLE USE THE SAME VAR
+$formLabelMarginBottom: 0.5rem; // REG TOGGLE USE THE SAME VAR
+
+// FORM LABEL TOGGLE
+$formLabelToggleDisplay: inline-block;
+
+// FROM LABEL AFTER
+$labelRequiredAfterContent: '*';
+$labelRequiredAfterDisplay: inline-block;
+$labelRequiredAfterColor: #F00;
+
+// HIDDEN ELEMENT
+$hiddenOpacity: 0;
+$hiddenVisibility: hidden;
+
+// VISIBLE ELEMENT
+$visibleOpacity: 1;
+$visibleVisibility: visible;
+
+// OPTIONAL FIELDS TRANSITION (VISIBLE/HIDDEN)
+$optionalFieldTransitionProp: all;
+$optionalFieldTransitionSpeed: 1s;
+$optionalFieldTransitionDelay: 0s;
+
+// BUTTONS
+$buttonTopBottomPadding: 0.2rem;
+$buttonLeftRightPadding: 0.5rem;
