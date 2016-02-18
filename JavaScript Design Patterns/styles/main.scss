@@ -1,0 +1,43 @@
+@import 'reset/_reset';
+
+.container {
+		padding: 0 1rem 1rem 1rem;
+		border: solid 0.1rem #CCC;
+		text-align: left;
+	}
+		.container-title {
+			padding: 2rem 0.5rem 0.5rem 0.5rem;
+			font-size: 1.8rem;
+			text-align: center;
+		}
+
+		.section {
+			padding: 1rem;
+			margin-top: 1rem;
+			border: solid 0.1rem #CCC;
+			text-align: right;
+		}
+			.section-title {
+				font-size: 1.4rem;
+				padding: 0.5rem;
+			}
+			
+			.item {
+				padding: 1rem;
+				cursor: pointer;
+				font-size: 1.8rem;
+				text-align: left;		
+				border-bottom: solid 0.1rem #CCC;			
+				&.item-completed {
+					background-color: #0F0;
+				}
+			}
+
+			.control {
+				margin-top: 1rem;
+				padding: 0.5rem;
+				font-size: 1.4rem;
+				&.control-button {
+					margin-left: 1rem;
+				}
+			}
