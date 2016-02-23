@@ -1,0 +1,27 @@
+html, body,
+input, button {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font: 62.5% 'Arial', sans-serif;
+  color: #000; }
+
+input {
+  vertical-align: bottom; }
+  input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem; }
+
+.form-control,
+.button {
+  padding: 0.5rem;
+  margin: 1rem 0; }
+
+.item {
+  padding: 2rem;
+  font-size: 1.8rem; }
+  .item.completed {
+    background-color: #0F0; }
+
+/*# sourceMappingURL=main.css.map */
